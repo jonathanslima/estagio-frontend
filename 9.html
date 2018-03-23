@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button data-js="javascript">Button</button>
+
+  <script>
+    (function(){
+      var button = document.querySelector('[data-js]');
+      
+      button.addEventListener('click', function(e){
+        e.preventDefault();
+        alert('cliquei no botão');
+      }, false);
+    })();
+
+    // Faça o código acima, mas com jQuery
+    // Nível: Difícil
+  </script>
+</body>
+</html>
